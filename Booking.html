@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spade Mechanics /Book a service</title>
+</head>
+<body>
+      <header>
+        <img src="Images/Blue and White Modern Illustrative Car Rent Logo.png" alt="The brand Logo" width="150px">
+        <h1>Spade Mechanics</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Booking.html" aria-current="page">Book Now</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book a Service</h2>
+        <form action="/submit-booking" method="post">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required><br><br>
+
+             <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required><br><br>
+
+             <label for="car">Car Make & Model</label>
+            <input id="car" name="car" type="text" required><br><br>
+
+             <label for="service">Service Needed</label>
+            <input id="service" name="service" type="text" required><br><br>
+
+             <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" required><br><br>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </main>
+     <footer>
+        <p>&copy; 2025 Spade Mechanics</p>
+    </footer>
+</body>
+</html>
