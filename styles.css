@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #B22222; /* Firebrick red */
+  --color-dark-grey: #2F4F4F; /* Dark slate gray */
+  --color-silver: #C0C0C0; /* Metallic silver */
+  --color-white: #FFFFFF;
+  --color-light-grey: #F5F5F5;
+
+  --font-heading: 'Montserrat', 'Roboto Slab', sans-serif;
+  --font-body: 'Open Sans', 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-dark-grey);
+  line-height: 1.6;
+}
