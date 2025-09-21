@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Spade Mechanics /Services</title>
+    <meta name="description" content="Spade Mechanics Services - Repairs, maintenance, diagnostics and more.">
+    <title>Spade Mechanics / Services</title>
 </head>
 <body>
-      <header>
-        <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px">
-        <h1 class="steel-title">Spade Mechanics</h1>
-  <p>Your trusted local mechanic shop</p>
-        <nav>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Services.html" aria-current="page">Services</a></li>
-            <li><a href="Booking.html">Book Now</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <a href="Home.html" class="nav-brand">
+                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px">
+                <span>Spade Mechanics</span>
+            </a>
+            <p>Your trusted local mechanic shop</p>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Booking.html">Book Now</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<hr>
-    <main>
-        <h2>Our Services</h2>
-        <section>
-            <h3>General Repairs</h3>
-            <ul>
-                <li>Brake repairs and replacements</li>
-                <li>Clutch and transmission servicing</li>
-            </ul>
-        </section>
-<hr>
-        <section>
-            <h3>Maintenance</h3>
-            <ul>
-                <li>Oil changes and filter replacement</li>
-                <li>Wheel alignment and balancing</li>
-            </ul>
-        </section>
-<hr>
-        <section>
-            <h3>Diagnostics</h3>
-            <ul>
-                <li>Electronic systems troubleshooting</li>
-                <li>Engine fault diagnostics</li>
-            </ul>
-        </section>
-        <p><a href="Booking.html">Ready too book?</a></p>
-    </main>
-    <hr>
-     <footer>
-        <p>&copy; 2025 Spade Mechanics</p>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="Images/service1.jpg" alt="General Repairs">
+                    <h3>General Repairs</h3>
+                    <p>From brakes to engines, we handle all types of vehicle repairs with expertise and care.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/service2.jpg" alt="Diagnostics">
+                    <h3>Diagnostics</h3>
+                    <p>State-of-the-art diagnostic tools to quickly identify and fix issues with your vehicle.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/service3.jpg" alt="Maintenance">
+                    <h3>Maintenance</h3>
+                    <p>Regular servicing, oil changes, and inspections to keep your car running smoothly.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/service4.jpg" alt="Tyres & Alignment">
+                    <h3>Tyres & Alignment</h3>
+                    <p>Tyre replacement, balancing, and wheel alignment for safety and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Spade Mechanics</p>
+        </div>
     </footer>
 </body>
 </html>

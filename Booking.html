@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Spade Mechanics /Book a service</title>
+    <meta name="description" content="Book a service with Spade Mechanics.">
+    <title>Spade Mechanics / Book Now</title>
 </head>
 <body>
-      <header>
-        <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px">
-        <h1 class="steel-title">Spade Mechanics</h1>
-        <header>
-  <p>Your trusted local mechanic shop</p>
-        <nav>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Booking.html" aria-current="page">Book Now</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <a href="Home.html" class="nav-brand">
+                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px">
+                <span>Spade Mechanics</span>
+            </a>
+            <p>Your trusted local mechanic shop</p>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Booking.html">Book Now</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<hr>
-    <main>
-        <h2>Book a Service</h2>
-        <form action="/submit-booking" method="post">
-            <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" required><br><br>
 
-             <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" required><br><br>
+    <section class="contact">
+        <div class="container">
+            <h2>Book a Service</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <input type="text" name="vehicle" placeholder="Vehicle Make & Model" required>
+                <textarea name="message" placeholder="Describe the service you need" required></textarea>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
 
-             <label for="car">Car Make & Model</label>
-            <input id="car" name="car" type="text" required><br><br>
-
-             <label for="service">Service Needed</label>
-            <input id="service" name="service" type="text" required><br><br>
-
-             <label for="date">Preferred Date</label>
-            <input id="date" name="date" type="date" required><br><br>
-
-            <button type="submit">Submit Booking</button>
-        </form>
-    </main>
-    <hr>
-     <footer>
-        <p>&copy; 2025 Spade Mechanics</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Spade Mechanics</p>
+        </div>
     </footer>
 </body>
 </html>
