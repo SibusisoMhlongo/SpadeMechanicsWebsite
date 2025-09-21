@@ -1,52 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Spade Mechanics | Contact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Spade Mechanics - Get in touch with us.">
+    <title>Spade Mechanics / Contact</title>
 </head>
 <body>
-  <header>
-    <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px">
-    <header>
-  <h1 class="steel-title">Spade Mechanics</h1>
-  <p>Your trusted local mechanic shop</p>
-    <nav>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="booking.html">Book Now</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html" aria-current="page">Contact</a></li>
-    </nav>
-  </header>
-<hr>
-  <main>
-    <h2>Contact Us</h2>
-    <p>Address: 189 Motor Street, Heidelberg, South Africa</p>
-    <p>Phone: +27 79 512 8457 | Email: info@spademechanics.co.za</p>
+    <header class="header">
+        <div class="container">
+            <a href="Home.html" class="nav-brand">
+                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="Two luxury cars, one blue and one gray, appear in motion with dynamic blue swooshes above and below them. Below the cars, the text reads SPADE MECHANICS in bold blue letters and LUXURY CAR REPAIRS in gray. The design conveys a sense of professionalism, trust, and modern automotive expertise." width="150px"><br>
+                <span>Spade Mechanics</span>
+            </a>
+            <p>Your trusted local mechanic shop</p>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Booking.html">Book Now</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <form action="/send-message" method="post">
-      <label for="cname">Name</label>
-      <input id="cname" name="name" type="text" required>
-
-      <label for="cemail">Email</label>
-      <input id="cemail" name="email" type="email" required>
-
-      <label for="cmsg">Message</label>
-      <textarea id="cmsg" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-<hr>
-    <section>
-      <h3>Business Hours</h3>
-      <p>Mon–Fri: 08:00–18:00 | Sat: 08:00–14:00</p>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div style="margin-top:2rem;">
+                <p><strong>Operating Hours:</strong> Mon-Fri: 08:00-18:00 | Sat: 08:00-14:00</p>
+                <p><strong>Address:</strong> 189 Motor Street, Heidelberg, South Africa</p>
+                <p><strong>Phone:</strong> +27 79 512 8457</p>
+                <p><strong>Email:</strong> info@spademechanics.co.za</p>
+            </div>
+        </div>
     </section>
-  </main>
-<hr>
-  <footer>
-    <p>&copy; 2025 Spade Mechanics</p>
-  </footer>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Spade Mechanics</p>
+        </div>
+    </footer>
 </body>
 </html>
