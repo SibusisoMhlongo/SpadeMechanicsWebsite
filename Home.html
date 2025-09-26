@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Spade Mechanics - Reliable local mechanic services. Repairs, maintenance and diagnostics.">
-    <title>Spade Mechanics / Home</title>
+    <title>Spade Mechanics | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="Home.html" class="nav-brand">
-                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px"><br>
-                <span>Spade Mechanics</span>
-            </a>
-            <p>Your trusted local mechanic shop</p>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Booking.html">Book Now</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-contact">
+                <a href="tel:+27123456789">
+                    <i class="fas fa-phone"></i> +27 (79) 512-8457
+                </a>
+                <a href="mailto:info@spademechanics.co.za">
+                    <i class="fas fa-envelope"></i> info@spademechanics.co.za
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="Home.html" class="logo">
+                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="Spade Mechanics Logo">
+                Spade Mechanics
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Booking.html">Book Now</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <a href="Booking.html" class="action-button">Book Appointment</a>
+        </div>
+    </nav>
 
     <section class="hero">
-        <div class="container">
+        <div class="hero-content">
             <h1>Welcome to Spade Mechanics</h1>
             <p>Reliable, affordable vehicle repairs and maintenance to keep you on the road safely.</p>
-            <a href="Booking.html" class="btn-primary">Book a service today</a>
+            <a href="Booking.html" class="action-button">Book a service today</a>
         </div>
     </section>
 
@@ -41,27 +62,58 @@
             <h2>Your Trusted Local Mechanic</h2>
             <p>At Spade Mechanics, we provide reliable and affordable vehicle repairs and maintenance to keep you on the road safely.</p>
             <p>
-                <a href="Booking.html">Book a service today</a> or 
+                <a href="Booking.html">Book a service today</a> or
                 <a href="Services.html">view our services</a>.
             </p>
         </section>
         <hr>
         <section>
             <h2>SiteMap</h2>
-            <img src="Images/SiteMap.jpg" alt="SiteMap" width="600px">
+            <img src="Images/SiteMap.jpg" alt="Website sitemap showing navigation structure of Spade Mechanics website">
         </section>
         <hr>
+           <section id="location">
+  <h2>Find Us</h2>
+  <p>Visit Spade Mechanics at our workshop for reliable car repairs.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.1901348889587!2d28.352577388286598!3d-26.514008789980167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e94dc4461e66403%3A0xf5fa563bcf51e23a!2sSupa%20Quick%20Tyre%20Experts%20Heidelberg!5e0!3m2!1sen!2sza!4v1758860642234!5m2!1sen!2sza"
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+<hr>
         <section>
             <h2>Operating Hours</h2>
             <p>Mon-Fri: 08:00-18:00 | Sat: 08:00-14:00</p>
-            <p>189 Motor Street, Heidelberg, South Africa</p>
+            <p>23 Schoeman st, Heidelberg, South Africa</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Spade Mechanics</p>
+            <div class="footer-links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Booking.html">Book Now</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </div>
         </div>
     </footer>
-</body>
-</html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>

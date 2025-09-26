@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Spade Mechanics - Learn more about our team and values.">
-    <title>Spade Mechanics / About</title>
+    <meta name="description" content="Spade Mechanics - Reliable local mechanic services. Repairs, maintenance and diagnostics.">
+    <title>Spade Mechanics | Book Now!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="Home.html" class="nav-brand">
-                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="The brand Logo" width="150px"><br>
-                <span>Spade Mechanics</span>
-            </a>
-            <p>Your trusted local mechanic shop</p>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Services.html">Services</a></li>
-                    <li><a href="Booking.html">Book Now</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-contact">
+                <a href="tel:+27123456789">
+                    <i class="fas fa-phone"></i> +27 (79) 512-8457
+                </a>
+                <a href="mailto:info@spademechanics.co.za">
+                    <i class="fas fa-envelope"></i> info@spademechanics.co.za
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="Home.html" class="logo">
+                <img src="Images/Blue_and_White_Modern_Illustrative_Car_Rent_Logo.png" alt="Spade Mechanics Logo">
+                Spade Mechanics
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Booking.html">Book Now</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="about">
         <div class="container about-content">
@@ -42,7 +62,27 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Spade Mechanics</p>
+            <div class="footer-links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Booking.html">Book Now</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </div>
         </div>
     </footer>
+    
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
