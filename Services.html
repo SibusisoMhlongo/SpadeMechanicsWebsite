@@ -90,7 +90,11 @@
         </div>
     </footer>
 
-     <script>
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+    <script src="gallery.js"></script>
+    <script src="animations.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const navToggle = document.querySelector('.nav-toggle');
             const navMenu = document.querySelector('.nav-menu');
@@ -99,6 +103,17 @@
                     navMenu.classList.toggle('active');
                 });
             }
+
+            // Expandable service details
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const details = this.querySelector('.service-details');
+                    if (details) {
+                        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
         });
     </script>
 </body>

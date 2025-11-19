@@ -80,7 +80,9 @@
         </div>
     </footer>
 
-     <script>
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const navToggle = document.querySelector('.nav-toggle');
             const navMenu = document.querySelector('.nav-menu');
@@ -88,6 +90,11 @@
                 navToggle.addEventListener('click', function() {
                     navMenu.classList.toggle('active');
                 });
+            }
+
+            // Initialize forms
+            if (window.FormsModule) {
+                window.FormsModule.initForms();
             }
         });
     </script>

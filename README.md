@@ -18,7 +18,7 @@ The website design uses a strong industrial aesthetic, with steel-inspired typog
 
 ## Installation / Setup
 1. Clone or download this repository to your computer.  
-2. Open the `index.html` file in any modern web browser (Chrome, Firefox, Edge).  
+2. Open the `Home.html` file in any modern web browser (Chrome, Firefox, Edge).  
 3. To edit or expand, open the files in a code editor such as **Visual Studio Code**.  
 
 ## Usage
